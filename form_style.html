@@ -6,43 +6,54 @@
     <title>Document</title>
     <style>
         label{
-            font-size: 15px;
+            font-size: 17px;
         }
         body{
+            font-family: sans-serif;
             background-color: rgb(248,249,250)
         }
         input {
             border: 0.5px solid gray;
-            border-radius: 3px;
-            height: 25px;
+            border-radius: 5px;
+            height: 33px;
             margin-top: 10px;
         }
         #top{
-            padding: 130px;
+            padding: 250px;
             padding-top: 20px;
             padding-bottom: 15px;
             line-height: 15px;
             text-align: center;
         }
+        #top h1{
+            font-weight: 500;
+        }
         #top p{
-            line-height: 25px;
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: 200;
         }
         #main {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 200px;
+            margin: 270px;
             margin-top: 0px;
             margin-bottom: 100px;
         }
         #main1 {
-            width: 500px;
+            width: 550px;
         }
         #uname {
-            width: 475px;
+            width: 509px;
         }
         #user {
-            border: 1px solid black;
+            font-size: 17px;
+            border: 1px solid lightgray;
+            background-color: rgb(248,249,250);
+            padding: 7px;
+            margin-top: 3px;
+            border-radius: 5px;
         }
         #mainrow {
             margin-bottom: 20px;
@@ -52,13 +63,13 @@
             margin-bottom: 20px;
         }
         #checkrow1 input {
-            height: 11px;
+            height: 15px;
         }
         #checkrow2 {
             margin-bottom: 20px;
         }
         #checkrow2 input {
-            height: 11px;
+            height: 15px;
         }
         #opt {
             color: #888
@@ -71,7 +82,7 @@
             margin-bottom: 20px;
         }
         #flexrow1 input{
-            width: 240px;
+            width: 265px;
         }
         #flexrow2{
             display: flex;
@@ -85,14 +96,14 @@
         }
         #countrysel {
             width: 205px;
-            height: 30px;
+            height: 33px;
             margin-top: 10px;
             border: 0.5px solid gray;
             border-radius: 5px;
         }
         #statesel {
             width: 150px;
-            height: 30px;
+            height: 33px;
             margin-top: 10px;
             border: 0.5px solid gray;
             border-radius: 5px;
@@ -104,7 +115,7 @@
             align-items: center;
         }
         #flexrow3 input{
-            width: 240px;
+            width: 265px;
         }
         #flexrow4{
             display: flex;
@@ -120,7 +131,7 @@
             margin-left: 20px;
             margin-top: 0px;
             padding-top: 0px;
-            width: 230px;
+            width: 270px;
         }
         #cart div1 {
             display: flex;
@@ -134,10 +145,10 @@
         #cartbox2 {
             background-color: rgb(49,108,244);
             color: white;
-            border-radius: 13px;
-            width: 20px;
+            border-radius: 20px;
+            width: 25px;
             text-align: center;
-            padding: 5px;
+            padding: 7px;
             padding-bottom: 0px;
         }
         ul {
@@ -155,7 +166,7 @@
             align-items: flex-start;
         }
         li {
-            padding: 5px;
+            padding: 8px;
             padding-left: 15px;
             padding-right: 15px;
             border: 0.5px solid gray;
@@ -165,11 +176,11 @@
         }
         li p {
             margin: 0;
-            font-weight: bold;
+            font-weight: 500;
         }
         small {
             color: #888;
-            font-size: 12px;
+            font-size: 13px;
         }
         li:nth-child(1){
             border-top: 0px;
@@ -197,16 +208,18 @@
             border: 0.5px solid gray;
             border-radius: 5px;
             height: 30px;
-            width: 140px;
+            width: 170px;
             color: gray;
+            font-size: 15px;
         }
         #promo button{
             color: white;
             background-color: rgb(110, 117, 124);
             border: 0px;
             height: 35px;
-            width: 70px;
+            width: 75px;
             border-radius: 5px;
+            font-size:15px;
         }
         #subbutton {
             margin-top: 10px;
@@ -239,7 +252,7 @@
         <div id="main">
             <form>
                 <div id="main1">
-                    <h3>Billing address</h3>
+                    <h2>Billing address</h2>
                     <div id="flexrow1">
                         <div>
                             <label for="name">First name</label>
@@ -353,7 +366,7 @@
             </form>
             <div id="cart">
                 <div1>
-                    <h3 id="cartbox1">Your cart</h3>
+                    <h2 id="cartbox1">Your cart</h2>
                     <h3 id="cartbox2">3</h3>
                 </div1>
                 <ul>
