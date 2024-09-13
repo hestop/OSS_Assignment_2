@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(248,249,250)
+        }
+        #top{
+            padding: 130px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            line-height: 15px;
+            text-align: center;
+        }
+        #top p{
+            line-height: 25px;
+        }
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 100px;
+            margin-top: 0px;
+            margin-bottom: 100px;
+        }
+        #main1 {
+            width: 450px;
+        }
+        #flexrow1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #flexrow2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #flexrow3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #flexrow4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #cart {
+            margin-left: 20px;
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 230px;
+        }
+        #cart div1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #cartbox1 {
+            padding-top: 5px;
+            color: rgb(49,108,244);
+        }
+        #cartbox2 {
+            background-color: rgb(49,108,244);
+            color: white;
+            border-radius: 13px;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            padding-bottom: 0px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            border-bottom: 0.1px solid black;
+            border: 0.1px solid black;
+            border-radius: 5px;
+        }
+        #cartitem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        li {
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 0.1px solid black;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            background-color: white;
+        }
+        li p {
+            margin: 0;
+            font-weight: bold;
+        }
+        li small {
+            color: #888;
+            font-size: 14px;
+        }
+        li:nth-child(1){
+            border-top: 0px;
+        }
+        li:nth-child(4) {
+            background-color: rgb(248,249,250)
+        }
+        li:nth-child(4) p {
+            color: green;
+        }
+
+        li:nth-child(4) small {
+            color: green;
+        }
+        #subbutton {
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            border: 0px;
+            background-color: rgb(49,108,244);
+            color: white;
+            width: 450px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 필수 사용: //text, //radio, //checkbox, //select, //date, //textarea
+    선택 사용: //fieldset, legend, optgroup, color, datalist-->
+    <top>
+        <div id="top">
+            <img src="./img/Bootstrap_Logo.png" height="100px">
+            <h1>Checkout form</h1>
+            <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+    </top>
+    <main>
+        <div id="main">
+            <form>
+                <div id="main1">
+                    <h2>Billing address</h2>
+                    <div id="flexrow1">
+                        <div>
+                            <label for="name">First name</label>
+                            <br>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <label for="name">Last name</label>
+                            <br>
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="uname">Username</label>
+                        <br>
+                        <span>@</span>
+                        <input type="text" name="uname">
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <label for="mail">(Optional)</label>
+                        <br>
+                        <input type="email" name="mail" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="Addr1">Address</label>
+                        <br>
+                        <input type="text" name="Addr1" placeholder="1234 Main St">
+                    </div>
+                    <div>
+                        <label for="Addr2">Address2</label>
+                        <label for="Addr2">(Optional)</label>
+                        <br>
+                        <input type="text" name="Addr2" placeholder="Apartment or suite">
+                    </div>
+                    <div id="flexrow2">
+                        <div>
+                            <label for="Country">Country</label>
+                            <br>
+                            <select name="Country">
+                                <option label="Choose...">
+                                <option label="United States">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="State">State</label>
+                            <br>
+                            <select name="State">
+                                <option label="Choose...">
+                                <option label="California">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Zip">Zip</label>
+                            <br>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="checkbox" name="sele">
+                        <label for="sele">Shipping address is the same as my billing address</label>
+                        <br>
+                        <input type="checkbox" name="sele">
+                        <label for="sele">Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h2>Payment</h2>
+                    <div>
+                        <input type="radio" name="pay">
+                        <label for="pay">Credit card</label>
+                        <br>
+                        <input type="radio" name="pay">
+                        <label for="pay">Debit card</label>
+                        <br>
+                        <input type="radio" name="pay">
+                        <label for="pay">PayPal</label>
+                    </div>
+                    <div>
+                        <div id="flexrow3">
+                            <div>
+                                <label for="cardInfo1">Name on card</label>
+                                <br>
+                                <input type="text" name="cardInfo1">
+                            </div>
+                            <div>
+                                <label for="cardInfo1">Credit card number</label>
+                                <br>
+                                <input type="text" name="cardInfo1">
+                            </div>
+                        </div>
+                        <small>Full name as displayed on card</small>
+                        <div id="flexrow4">
+                            <div>
+                                <label for="cardInfo2">Expiration</label>
+                                <br>
+                                <input type="date" name="edate">
+                            </div>
+                            <div>
+                                <label for="cardInfo2">CVV</label>
+                                <br>
+                                <input type="text" name="cardInfo2">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button id="subbutton" type="submit">Continue to checkout</button>
+                </div>
+            </form>
+            <div id="cart">
+                <div1>
+                    <h3 id="cartbox1">Your cart</h3>
+                    <h3 id="cartbox2">3</h3>
+                </div1>
+                <ul>
+                    <li>
+                        <div id="cartitem">
+                            <p>Product name</p>
+                            <p>$12</p>
+                        </div>
+                        <small>Brief description</small>
+                    </li>
+                    <li>
+                        <div id="cartitem">
+                            <p>Second product</p>
+                            <p>$8</p>
+                        </div>
+                        <small>Brief description</small>
+                    </li>
+                    <li>
+                        <div id="cartitem">
+                            <p>Third item</p>
+                            <p>$5</p>
+                        </div>
+                        <small>Brief description</small>
+                    </li>
+                    <li>
+                        <div id="cartitem">
+                            <p>Promo code</p>
+                            <p>−$5</p>
+                        </div>
+                        <small>EXAMPLECODE</small>
+                    </li>
+                    <li id="cartitem">
+                        <p>Total (USD)</p>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+                <form>
+                    <div>
+                        <fieldset>
+                            <textarea name="code" rows="2" cols="10">Promo code</textarea>
+                            <button type="submit">Redeem</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>© 2017–2022 Company Name</p>
+            <div>
+                <a href="url">Privacy</a>
+                <a href="url">Terms</a>
+                <a href="url">Support</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
