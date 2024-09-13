@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        label{
+            font-size: 15px;
+        }
         body{
             background-color: rgb(248,249,250)
+        }
+        input {
+            border: 0.5px solid gray;
+            border-radius: 3px;
+            height: 25px;
+            margin-top: 10px;
         }
         #top{
             padding: 130px;
@@ -22,24 +31,71 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 100px;
+            margin: 200px;
             margin-top: 0px;
             margin-bottom: 100px;
         }
         #main1 {
-            width: 450px;
+            width: 500px;
+        }
+        #uname {
+            width: 475px;
+        }
+        #user {
+            border: 1px solid black;
+        }
+        #mainrow {
+            margin-bottom: 20px;
+        }
+        #checkrow1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #checkrow1 input {
+            height: 11px;
+        }
+        #checkrow2 {
+            margin-bottom: 20px;
+        }
+        #checkrow2 input {
+            height: 11px;
+        }
+        #opt {
+            color: #888
         }
         #flexrow1{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow1 input{
+            width: 240px;
         }
         #flexrow2{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow2 input{
+            width: 110px;
+        }
+        #countrysel {
+            width: 205px;
+            height: 30px;
+            margin-top: 10px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+        }
+        #statesel {
+            width: 150px;
+            height: 30px;
+            margin-top: 10px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
         }
         #flexrow3{
             display: flex;
@@ -47,11 +103,18 @@
             justify-content: space-between;
             align-items: center;
         }
+        #flexrow3 input{
+            width: 240px;
+        }
         #flexrow4{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content:flex-start;
             align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow4 input{
+            margin-right: 25px;
         }
         #cart {
             margin-left: 20px;
@@ -80,9 +143,10 @@
         ul {
             list-style-type: none;
             padding: 0;
-            border-bottom: 0.1px solid black;
-            border: 0.1px solid black;
+            border-bottom: 0.5px solid gray;
+            border: 0.5px solid gray;
             border-radius: 5px;
+            background-color: white;
         }
         #cartitem {
             display: flex;
@@ -94,19 +158,18 @@
             padding: 5px;
             padding-left: 15px;
             padding-right: 15px;
-            border: 0.1px solid black;
+            border: 0.5px solid gray;
             border-bottom: 0px;
             border-left: 0px;
             border-right: 0px;
-            background-color: white;
         }
         li p {
             margin: 0;
             font-weight: bold;
         }
-        li small {
+        small {
             color: #888;
-            font-size: 14px;
+            font-size: 12px;
         }
         li:nth-child(1){
             border-top: 0px;
@@ -121,6 +184,30 @@
         li:nth-child(4) small {
             color: green;
         }
+        #promo {
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 10px;
+        }
+        #promo textarea{
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            height: 30px;
+            width: 140px;
+            color: gray;
+        }
+        #promo button{
+            color: white;
+            background-color: rgb(110, 117, 124);
+            border: 0px;
+            height: 35px;
+            width: 70px;
+            border-radius: 5px;
+        }
         #subbutton {
             margin-top: 10px;
             padding-top: 10px;
@@ -132,6 +219,8 @@
             width: 450px;
         }
         footer{
+            color: gray;
+            font-size: 15px;
             text-align: center;
         }
     </style>
@@ -150,7 +239,7 @@
         <div id="main">
             <form>
                 <div id="main1">
-                    <h2>Billing address</h2>
+                    <h3>Billing address</h3>
                     <div id="flexrow1">
                         <div>
                             <label for="name">First name</label>
@@ -163,34 +252,34 @@
                             <input type="text" name="name">
                         </div>
                     </div>
-                    <div>
+                    <div id="mainrow">
                         <label for="uname">Username</label>
                         <br>
-                        <span>@</span>
-                        <input type="text" name="uname">
+                        <span id="user">@</span>
+                        <input id="uname" type="text" name="uname" placeholder="  Username">
                     </div>
-                    <div>
+                    <div id="mainrow">
                         <label for="mail">Email</label>
-                        <label for="mail">(Optional)</label>
+                        <label id="opt" for="mail">(Optional)</label>
                         <br>
-                        <input type="email" name="mail" placeholder="you@example.com">
+                        <input id="main1" type="email" name="mail" placeholder="  you@example.com">
                     </div>
-                    <div>
+                    <div id="mainrow">
                         <label for="Addr1">Address</label>
                         <br>
-                        <input type="text" name="Addr1" placeholder="1234 Main St">
+                        <input id="main1" type="text" name="Addr1" placeholder="  1234 Main St">
                     </div>
-                    <div>
-                        <label for="Addr2">Address2</label>
-                        <label for="Addr2">(Optional)</label>
+                    <div id="mainrow">
+                        <label for="Addr2">Address 2</label>
+                        <label id="opt" for="Addr2">(Optional)</label>
                         <br>
-                        <input type="text" name="Addr2" placeholder="Apartment or suite">
+                        <input id="main1" type="text" name="Addr2" placeholder="  Apartment or suite">
                     </div>
                     <div id="flexrow2">
                         <div>
                             <label for="Country">Country</label>
                             <br>
-                            <select name="Country">
+                            <select id="countrysel" name="Country">
                                 <option label="Choose...">
                                 <option label="United States">
                             </select>
@@ -198,7 +287,7 @@
                         <div>
                             <label for="State">State</label>
                             <br>
-                            <select name="State">
+                            <select id="statesel" name="State">
                                 <option label="Choose...">
                                 <option label="California">
                             </select>
@@ -210,7 +299,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div>
+                    <div id="checkrow1">
                         <input type="checkbox" name="sele">
                         <label for="sele">Shipping address is the same as my billing address</label>
                         <br>
@@ -219,7 +308,7 @@
                     </div>
                     <hr>
                     <h2>Payment</h2>
-                    <div>
+                    <div id="checkrow2">
                         <input type="radio" name="pay">
                         <label for="pay">Credit card</label>
                         <br>
@@ -242,7 +331,9 @@
                                 <input type="text" name="cardInfo1">
                             </div>
                         </div>
-                        <small>Full name as displayed on card</small>
+                        <div id="mainrow">
+                            <small>Full name as displayed on card</small>
+                        </div>
                         <div id="flexrow4">
                             <div>
                                 <label for="cardInfo2">Expiration</label>
@@ -301,8 +392,8 @@
                 </ul>
                 <form>
                     <div>
-                        <fieldset>
-                            <textarea name="code" rows="2" cols="10">Promo code</textarea>
+                        <fieldset id="promo">
+                            <textarea name="code"> Promo code</textarea>
                             <button type="submit">Redeem</button>
                         </fieldset>
                     </div>
