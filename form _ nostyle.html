@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 필수 사용: //text, //radio, //checkbox, //select, //date, //textarea
+    선택 사용: //fieldset, legend, optgroup, color, datalist-->
+    <top>
+        <div>
+            <img src="./img/Bootstrap_Logo.png" height="100px">
+            <h1>Checkout form</h1>
+            <p1>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p1>
+        </div>
+    </top>
+    <main>
+        <div>
+            <form>
+                <div>
+                    <h2>Billing address</h2>
+                    <div>
+                        <div>
+                            <label for="name">First name</label>
+                            <br>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <label for="name">Last name</label>
+                            <br>
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="uname">Username</label>
+                        <br>
+                        <span>@</span>
+                        <input type="text" name="uname">
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <label for="mail">(Optional)</label>
+                        <br>
+                        <input type="email" name="mail" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="Addr1">Address</label>
+                        <br>
+                        <input type="text" name="Addr1" placeholder="1234 Main St">
+                    </div>
+                    <div>
+                        <label for="Addr2">Address2</label>
+                        <label for="Addr2">(Optional)</label>
+                        <br>
+                        <input type="text" name="Addr2" placeholder="Apartment or suite">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="Country">Country</label>
+                            <br>
+                            <select name="Country">
+                                <option label="Choose...">
+                                <option label="United States">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="State">State</label>
+                            <br>
+                            <select name="State">
+                                <option label="Choose...">
+                                <option label="California">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Zip">Zip</label>
+                            <br>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="checkbox" name="sele">
+                        <label for="sele">Shipping address is the same as my billing address</label>
+                        <br>
+                        <input type="checkbox" name="sele">
+                        <label for="sele">Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h2>Payment</h2>
+                    <div>
+                        <input type="radio" name="pay">
+                        <label for="pay">Credit card</label>
+                        <br>
+                        <input type="radio" name="pay">
+                        <label for="pay">Debit card</label>
+                        <br>
+                        <input type="radio" name="pay">
+                        <label for="pay">PayPal</label>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <label for="cardInfo1">Name on card</label>
+                                <br>
+                                <input type="text" name="cardInfo1">
+                            </div>
+                            <small>Full name as displayed on card</small>
+                            <div>
+                                <label for="cardInfo1">Credit card number</label>
+                                <br>
+                                <input type="text" name="cardInfo1">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="cardInfo2">Expiration</label>
+                                <br>
+                                <input type="date" name="edate">
+                            </div>
+                            <div>
+                                <label for="cardInfo2">CVV</label>
+                                <br>
+                                <input type="text" name="cardInfo2">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit">Continue to checkout</button>
+                </div>
+            </form>
+            <div>
+                <h2>Your cart</h2>
+                <strong>3</strong>
+                <ul>
+                    <li>
+                        <p>Product name</p>
+                        <small>Brief description</small>
+                        <p>$12</p>
+                    </li>
+                    <li>
+                        <p>Second product</p>
+                        <small>Brief description</small>
+                        <p>$8</p>
+                    </li>
+                    <li>
+                        <p>Third item</p>
+                        <small>Brief description</small>
+                        <p>$5</p>
+                    </li>
+                    <li>
+                        <p>Promo code</p>
+                        <small>EXAMPLECODE</small>
+                        <p>−$5</p>
+                    </li>
+                    <li>
+                        <p>Total (USD)</p>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+                <form>
+                    <div>
+                        <fieldset>
+                            <textarea name="code" rows="2" cols="10">Promo code</textarea>
+                            <button type="submit">Redeem</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>© 2017–2022 Company Name</p>
+            <div>
+                <a href="url">Privacy</a>
+                <a href="url">Terms</a>
+                <a href="url">Support</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
