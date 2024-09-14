@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-size: 17px;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: rgb(248,249,250)
+        }
+        input {
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            height: 33px;
+            margin-top: 10px;
+        }
+        #top{
+            padding: 250px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            line-height: 15px;
+            text-align: center;
+        }
+        #top h1{
+            font-weight: 500;
+        }
+        #top p{
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: 200;
+        }
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 270px;
+            margin-top: 0px;
+            margin-bottom: 100px;
+        }
+        #main1 {
+            width: 550px;
+        }
+        #uname {
+            width: 505px;
+        }
+        #user {
+            font-size: 17px;
+            border: 1px solid lightgray;
+            background-color: rgb(248,249,250);
+            padding: 7px;
+            margin-top: 3px;
+            border-radius: 5px;
+        }
+        #mainrow {
+            margin-bottom: 18px;
+        }
+        #checkrow1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #checkrow1 input {
+            height: 15px;
+        }
+        #checkrow2 {
+            margin-bottom: 20px;
+        }
+        #checkrow2 input {
+            height: 15px;
+        }
+        #opt {
+            color: #888
+        }
+        #flexrow1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow1 input{
+            width: 265px;
+        }
+        #flexrow2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow2 input{
+            width: 110px;
+        }
+        #countrysel {
+            width: 205px;
+            height: 33px;
+            margin-top: 10px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+        }
+        #statesel {
+            width: 150px;
+            height: 33px;
+            margin-top: 10px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+        }
+        #flexrow3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow3 input{
+            width: 265px;
+        }
+        #flexrow4{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #flexrow4 input{
+            margin-right: 25px;
+            width: 130px;
+        }
+        #cart {
+            margin-left: 20px;
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 270px;
+        }
+        #cart div1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #cartbox1 {
+            padding-top: 5px;
+            color: rgb(49,108,244);
+        }
+        #cartbox2 {
+            background-color: rgb(49,108,244);
+            color: white;
+            border-radius: 20px;
+            width: 25px;
+            text-align: center;
+            padding: 7px;
+            padding-bottom: 0px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            border-bottom: 0.5px solid gray;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            background-color: white;
+        }
+        #cartitem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        li {
+            padding: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 0.5px solid gray;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+        li p {
+            margin: 0;
+            font-weight: 500;
+        }
+        small {
+            color: #888;
+            font-size: 13px;
+            line-height: 30px;
+        }
+        li:nth-child(1){
+            border-top: 0px;
+        }
+        li:nth-child(4) {
+            background-color: rgb(248,249,250)
+        }
+        li:nth-child(4) p {
+            color: green;
+        }
+
+        li:nth-child(4) small {
+            color: green;
+        }
+        #promo {
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 10px;
+        }
+        #promo textarea{
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            height: 30px;
+            width: 170px;
+            color: gray;
+            font-size: 15px;
+        }
+        #promo button{
+            color: white;
+            background-color: rgb(110, 117, 124);
+            border: 0px;
+            height: 35px;
+            width: 75px;
+            border-radius: 5px;
+            font-size:15px;
+        }
+        #subbutton {
+            margin-top: 10px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 5px;
+            border: 0px;
+            background-color: rgb(49,108,244);
+            color: white;
+            width: 550px;
+            font-size: 20px;
+        }
+        footer{
+            color: gray;
+            font-size: 15px;
+            text-align: center;
+        }
+        #validmesg {
+            font-size: 13px;
+            color: rgb(203,71,77);
+        }
+        input.valid {
+            border: 1.3px solid green;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 35 16"%3E%3Cpath d="M16 2L6 16 0 9.6 2.5 7.3 6 11.4 13.6 0z"/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 20px;
+        }
+        input.invalid {
+            border: 1.3px solid red;
+        }
+        select.invalid {
+            border: 1.3px solid red;
+        }
+        select.valid {
+            border: 1.3px solid green;
+        }
+        #email {
+            width: 550px;
+        }
+        #address2 {
+            width: 550px;
+        }
+        .checkbox, .radio {
+            accent-color: green;
+        }
+    </style>
+</head>
+<script>
+    function validcheck(event) {
+        event.preventDefault();
+
+        const inputs = document.querySelectorAll("#main1 input");
+        const selects = document.querySelectorAll("#main1 select");
+        const emailInput = document.getElementById("email");
+        const address2Input = document.getElementById("address2");
+
+        const validationMessages = {
+            "name": "Valid first name is required.",
+            "lastname": "Valid last name is required.",
+            "uname": "Your username is required.",
+            "Addr1": "Please enter your shipping address.",
+            "Country": "Please select a valid country.",
+            "State": "Please provide a valid state.",
+            "zip": "Zip code required.",
+            "cardInfo1": "Name on card is required.",
+            "cardInfo2": "Credit card number is required.",
+            "edate": "Expiration date required.",
+            "cardInfo3": "Security code required."
+        };
+
+        // Input fields validation
+        inputs.forEach(input => {
+            const inputName = input.name;
+            const message = validationMessages[inputName];
+            const smallElement = document.getElementById(`validmesg${inputName}`);
+
+            if (input.value === "") {
+                input.classList.add("invalid");
+                input.classList.remove("valid");
+                if (smallElement) {
+                    smallElement.innerHTML = message;
+                    smallElement.style.display = "block";
+                    smallElement.style.color="red"
+                }
+            } else {
+                input.classList.add("valid");
+                input.classList.remove("invalid");
+                if (smallElement) {
+                    smallElement.style.display = "none";
+                }
+            }
+        });
+
+        // Mark email and address2 as valid by default
+        emailInput.classList.add("valid");
+        emailInput.classList.remove("invalid");
+        address2Input.classList.add("valid");
+        address2Input.classList.remove("invalid");
+
+        // Select fields validation
+        selects.forEach(select => {
+            const selectName = select.name;
+            const message = validationMessages[selectName];
+            const smallElement = document.getElementById(`validmesg${selectName}`);
+
+            if (select.value === "" || select.value === "Choose...") {
+                select.classList.add("invalid");
+                select.classList.remove("valid");
+                if (smallElement) {
+                    smallElement.innerHTML = message;
+                    smallElement.style.display = "block";
+                    smallElement.style.color="red";
+                }
+            } else {
+                select.classList.add("valid");
+                select.classList.remove("invalid");
+                if (smallElement) {
+                    smallElement.style.display = "none";
+                }
+            }
+        });
+
+        // Real-time validation for input fields
+        inputs.forEach(input => {
+            input.addEventListener("input", function() {
+                const inputName = input.name;
+                const message = validationMessages[inputName];
+                const smallElement = document.getElementById(`validmesg${inputName}`);
+
+                if (input.value !== "") {
+                    input.classList.add("valid");
+                    input.classList.remove("invalid");
+                    if (smallElement) {
+                        smallElement.style.display = "none";
+                    }
+                } else if (smallElement) {
+                    input.classList.remove("valid");
+                    input.classList.add("invalid");
+                    smallElement.innerHTML = message;
+                    smallElement.style.display = "block";
+                }
+            });
+        });
+
+        // Real-time validation for select fields
+        selects.forEach(select => {
+            select.addEventListener("change", function() {
+                const selectName = select.name;
+                const message = validationMessages[selectName];
+                const smallElement = document.getElementById(`validmesg${selectName}`);
+
+                if (select.value !== "" && select.value !== "Choose...") {
+                    select.classList.add("valid");
+                    select.classList.remove("invalid");
+                    if (smallElement) {
+                        smallElement.style.display = "none";
+                    }
+                } else if (smallElement) {
+                    select.classList.remove("valid");
+                    select.classList.add("invalid");
+                    smallElement.innerHTML = message;
+                    smallElement.style.display = "block";
+                }
+            });
+        });
+
+        // Checkbox and radio styling
+        const greenElements = document.getElementsByClassName("validgreen");
+        for (let i = 0; i < greenElements.length; i++) {
+            greenElements[i].style.color = "green";
+        }
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const radios = document.querySelectorAll('input[type="radio"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.classList.add("checkbox");
+        });
+        radios.forEach(radio => {
+            radio.classList.add("radio");
+        });
+    }
+</script>
+<body>
+    <!-- 필수 사용: //text, //radio, //checkbox, //select, //date, //textarea
+    선택 사용: //fieldset, legend, optgroup, color, datalist-->
+    <top>
+        <div id="top">
+            <img src="./img/Bootstrap_Logo.png" height="100px">
+            <h1>Checkout form</h1>
+            <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+    </top>
+    <main>
+        <div id="main">
+            <form onsubmit="validcheck(event)">
+                <div id="main1">
+                    <h2>Billing address</h2>
+                    <div id="flexrow1">
+                        <div>
+                            <label for="name">First name</label>
+                            <br>
+                            <input type="text" name="name">
+                            <br>
+                            <small id="validmesgname" name="validmesg"></small>
+                        </div>
+                        <div>
+                            <label for="name">Last name</label>
+                            <br>
+                            <input type="text" name="lastname">
+                            <br>
+                            <small id="validmesglastname" name="validmesg"></small>
+                        </div>
+                    </div>
+                    <div id="mainrow">
+                        <label for="uname">Username</label>
+                        <br>
+                        <span id="user">@</span>
+                        <input id="uname" type="text" name="uname" placeholder="  Username">
+                        <br>
+                        <small id="validmesguname" name="validmesg"></small>
+                    </div>
+                    <div id="mainrow">
+                        <label for="mail">Email</label>
+                        <label id="opt" for="mail">(Optional)</label>
+                        <br>
+                        <input id="email" type="email" name="mail" placeholder="  you@example.com">
+                    </div>
+                    <div id="mainrow">
+                        <label for="Addr1">Address</label>
+                        <br>
+                        <input id="main1" type="text" name="Addr1" placeholder="  1234 Main St">
+                        <br>
+                        <small id="validmesgAddr1" name="validmesg"></small>
+                    </div>
+                    <div id="mainrow">
+                        <label for="Addr2">Address 2</label>
+                        <label id="opt" for="Addr2">(Optional)</label>
+                        <br>
+                        <input id="address2" type="text" name="Addr2" placeholder="  Apartment or suite">
+                    </div>
+                    <div id="flexrow2">
+                        <div>
+                            <label for="Country">Country</label>
+                            <br>
+                            <div id="Country">
+                                <select id="countrysel" name="Country">
+                                    <option value="Choose...">Choose...</option>
+                                    <option value="United States">United States</option>
+                                </select>
+                            </div>
+                            <br>
+                            <small id="validmesgCountry" name="validmesg"></small>
+                        </div>
+                        <div>
+                            <label for="State">State</label>
+                            <br>
+                            <div id="State">
+                                <select id="statesel" name="State">
+                                    <option value="Choose...">Choose...</option>
+                                    <option value="California">United States</option>
+                                </select>
+                            </div>
+                            <br>
+                            <small id="validmesgState" name="validmesg"></small>
+                        </div>
+                        <div>
+                            <label for="Zip">Zip</label>
+                            <br>
+                            <input type="text" name="zip">
+                            <br>
+                            <small id="validmesgzip" name="validmesg"></small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="checkrow1">
+                        <input type="checkbox" name="sele">
+                        <label class="validgreen" for="sele">Shipping address is the same as my billing address</label>
+                        <br>
+                        <input type="checkbox" name="sele">
+                        <label class="validgreen" for="sele">Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h2>Payment</h2>
+                    <div id="checkrow2">
+                        <input type="radio" name="payment" checked>
+                        <label class="validgreen" for="pay" class="radio">Credit card</label>
+                        <br>
+                        <input type="radio" name="payment">
+                        <label class="validgreen" for="pay" class="radio">Debit card</label>
+                        <br>
+                        <input type="radio" name="payment">
+                        <label class="validgreen" for="pay" class="radio">PayPal</label>
+                    </div>
+                    <div>
+                        <div id="flexrow3">
+                            <div>
+                                <label for="cardInfo1">Name on card</label>
+                                <br>
+                                <input type="text" name="cardInfo1">
+                                <br>
+                                <div>
+                                    <small>Full name as displayed on card</small>
+                                    <br>
+                                    <small id="validmesgcardInfo1" name="validmesg"></small>
+                                </div>
+                            </div>
+                            <div id="mainrow">
+                                <label for="cardInfo1">Credit card number</label>
+                                <br>
+                                <input type="text" name="cardInfo2">
+                                <br>
+                                <small id="validmesgcardInfo2" name="validmesg"></small>
+                            </div>
+                        </div>
+                        <div id="flexrow4">
+                            <div>
+                                <label for="cardInfo2">Expiration</label>
+                                <br>
+                                <input type="date" name="edate">
+                                <br>
+                                <small id="validmesgedate" name="validmesg"></small>
+                            </div>
+                            <div>
+                                <label for="cardInfo2">CVV</label>
+                                <br>
+                                <input type="text" name="cardInfo3">
+                                <br>
+                                <small id="validmesgcardInfo3" name="validmesg"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button onclick="validcheck()" id="subbutton" type="submit">Continue to checkout</button>
+                </div>
+            </form>
+            <div id="cart">
+                <div1>
+                    <h2 id="cartbox1">Your cart</h2>
+                    <h3 id="cartbox2">3</h3>
+                </div1>
+                <ul>
+                    <li>
+                        <div id="cartitem">
+                            <p>Product name</p>
+                            <p>$12</p>
+                        </div>
+                        <small>Brief description</small>
+                    </li>
+                    <li>
+                        <div id="cartitem">
+                            <p>Second product</p>
+                            <p>$8</p>
+                        </div>
+                        <small>Brief description</small>
+                    </li>
+                    <li>
+                        <div id="cartitem">
+                            <p>Third item</p>
+                            <p>$5</p>
+                        </div>
+                        <small>Brief description</small>
+                    </li>
+                    <li>
+                        <div id="cartitem">
+                            <p>Promo code</p>
+                            <p>−$5</p>
+                        </div>
+                        <small>EXAMPLECODE</small>
+                    </li>
+                    <li id="cartitem">
+                        <p>Total (USD)</p>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+                <form>
+                    <div>
+                        <fieldset id="promo">
+                            <textarea name="code"> Promo code</textarea>
+                            <button type="submit">Redeem</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>© 2017–2022 Company Name</p>
+            <div>
+                <a href="url">Privacy</a>
+                <a href="url">Terms</a>
+                <a href="url">Support</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
