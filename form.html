@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(218, 227, 245);
+        }
         #items{
             background-color: rgb(199, 228, 228);
             height: 25px;
+            width: 300px;
         }
         button {
             color: white;
@@ -19,12 +24,14 @@
     </style>
 </head>
 <script>
+    window.onload = function() {
+        document.getElementById("items").placeholder = "원하는 단어를 입력하세요.";
+    };
     function add(){
         let input = document.getElementById("items").value;
         let items = input.split(",");
         let list = document.getElementById("list1");
         //list.innerHTML = "";
-        // 배열의 각 항목에 대해 <li> 태그를 생성하고 목록에 추가
         items.forEach(function(item) {
             let li = document.createElement("li");
             li.textContent = item.trim();
@@ -37,7 +44,6 @@
         let items = input.split(",");
         let list = document.getElementById("list2");
         //list.innerHTML = "";
-        // 배열의 각 항목에 대해 <li> 태그를 생성하고 목록에 추가
         items.forEach(function(item) {
             let li = document.createElement("li");
             li.textContent = item.trim();
@@ -45,8 +51,18 @@
         });
     }
     function del(){
-        document.getElementById("list1").innerHTML = "";
-        document.getElementById("list2").innerHTML = "";
+        let l1Content = document.getElementById("list1").innerHTML.trim();
+        let l2Content = document.getElementById("list2").innerHTML.trim();
+        
+        if(l1Content === "" && l2Content === ""){
+            alert("지울 내용이 없습니다");
+        } else {
+            let result = confirm("모든 목록을 삭제하시겠습니까?");
+            if(result){
+                document.getElementById("list1").innerHTML = "";
+                document.getElementById("list2").innerHTML = "";
+            }
+        }
     }
 
 </script>
@@ -68,9 +84,10 @@
     </div>
     <h2>목록2</h2>
     <div id="div2">
-        <li id="list2">
+        <ul id="list2">
 
-        </li>
+        </ul>
     </div>
+    <hr>
 </body>
 </html>
