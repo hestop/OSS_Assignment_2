@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #items{
+            background-color: rgb(199, 228, 228);
+            height: 25px;
+        }
+        button {
+            color: white;
+            background-color: rgb(132, 39, 219);
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<script>
+    function add(){
+        let input = document.getElementById("items").value;
+        let items = input.split(",");
+        let list = document.getElementById("list1");
+        //list.innerHTML = "";
+        // 배열의 각 항목에 대해 <li> 태그를 생성하고 목록에 추가
+        items.forEach(function(item) {
+            let li = document.createElement("li");
+            li.textContent = item.trim();
+            list.appendChild(li);
+        });
+    }
+
+    function add2(){
+        let input = document.getElementById("items").value;
+        let items = input.split(",");
+        let list = document.getElementById("list2");
+        //list.innerHTML = "";
+        // 배열의 각 항목에 대해 <li> 태그를 생성하고 목록에 추가
+        items.forEach(function(item) {
+            let li = document.createElement("li");
+            li.textContent = item.trim();
+            list.appendChild(li);
+        });
+    }
+    function del(){
+        document.getElementById("list1").innerHTML = "";
+        document.getElementById("list2").innerHTML = "";
+    }
+
+</script>
+<body>
+    <h1>Heeseo's Dynamic Web page</h1>
+    <div>
+        <input type="text" id="items" size="20">
+        <button onclick="add();">번호메기기</button>
+        <button onclick="add2();">목록만들기</button>
+        <button onclick="del();">지우기</button>
+    </div>
+    <h2>목록1</h2>
+    <div id="div1">
+        <ol id="list1">
+
+        </ol>
+    </div>
+    <hr>
+    </div>
+    <h2>목록2</h2>
+    <div id="div2">
+        <li id="list2">
+
+        </li>
+    </div>
+</body>
+</html>
