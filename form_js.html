@@ -78,7 +78,6 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 20px;
         }
         #flexrow1 input{
@@ -88,21 +87,20 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 20px;
         }
         #flexrow2 input{
             width: 110px;
         }
         #countrysel {
-            width: 205px;
+            width: 215px;
             height: 33px;
             margin-top: 10px;
             border: 0.5px solid gray;
             border-radius: 5px;
         }
         #statesel {
-            width: 150px;
+            width: 160px;
             height: 33px;
             margin-top: 10px;
             border: 0.5px solid gray;
@@ -112,7 +110,6 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 20px;
         }
         #flexrow3 input{
@@ -122,7 +119,6 @@
             display: flex;
             flex-direction: row;
             justify-content:flex-start;
-            align-items: center;
             margin-bottom: 20px;
         }
         #flexrow4 input{
@@ -165,7 +161,6 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;
         }
         li {
             padding: 8px;
@@ -245,8 +240,8 @@
             color: rgb(203,71,77);
         }
         input.valid {
-            border: 1.3px solid green;
-            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 35 16"%3E%3Cpath d="M16 2L6 16 0 9.6 2.5 7.3 6 11.4 13.6 0z"/%3E%3C/svg%3E');
+            border: 1.7px solid green;
+            background-image: url('./img/check.svg' );
             background-repeat: no-repeat;
             background-position: right center;
             background-size: 20px;
@@ -254,11 +249,17 @@
         input.invalid {
             border: 1.3px solid red;
         }
+        input.valid:focus{
+            outline: 3px solid green;
+        }
+        input.invalid:focus{
+            outline: 3px solid red;
+        }
         select.invalid {
-            border: 1.3px solid red;
+            outline: 1.7px solid red;
         }
         select.valid {
-            border: 1.3px solid green;
+            outline: 1.7px solid green;
         }
         #email {
             width: 550px;
