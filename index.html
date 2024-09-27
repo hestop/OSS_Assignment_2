@@ -11,8 +11,8 @@
     body {
       font-family: 'Roboto', sans-serif;
     }
-    footer {
-      padding: 25px;
+    body{
+        background-color: rgb(243, 243, 245);
     }
     .card-img-top {
       height: 280px;
@@ -29,6 +29,9 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+    .top-mar{
+        height: 525px;
+    }
     .top-banner {
       position: relative;
       color: white;
@@ -39,7 +42,6 @@
       padding-top: 200px;
       padding-bottom: 200px;
     }
-
     .top-banner::before {
       content: '';
       position: absolute;
@@ -63,13 +65,45 @@
       background: none;
       color: white;
     }
+    .foot{
+        position: relative;
+        height: 900px;
+        background-image: url('./img/footer-image.jpg');
+        background-size: cover;
+        background-position: center;
+        font-size: large;
+    }
+    .btn-custom {
+        width: 80px;
+        padding: 3px;
+        margin: 3px;
+        padding-left: 0px;
+    }
+    .btn-delete {
+        background-color: transparent;
+        color: #b21f2d;
+        border: 2px solid #b21f2d;
+    }
+    .btn-delete:hover {
+        background-color: #b21f2d;
+        color: white;
+    }
+    .btn-edit {
+        background-color: transparent;
+        color: #004085;
+        border: 2px solid #004085;
+    }
+    .btn-edit:hover {
+        background-color: #004085;
+        color: white;
+    }
   </style>
 </head>
 <body>
 
 <div class="top-banner">
   <h1>My Backpacking Gears</h1>
-  <a href="list.html" class="btn btn-light btn-lg rounded-pill">View List</a>
+  <a href="./view.html" class="btn btn-light btn-lg rounded-pill">View List</a>
 </div>
   
 
@@ -97,73 +131,49 @@
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Zpacks Arc Haul Ultra 50L</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Zpacks Arc Haul Ultra 50L</div>
         <img src="https://zpacks.com/cdn/shop/files/zpacks-archaul-50l-grey_2048x.jpg?v=1694539516" class="card-img-top" alt="Zpacks Arc Haul Ultra 50L">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 680g</li>
-          <li class="list-group-item">Material: Ultra 200</li>
-          <li class="list-group-item">Price: $375</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Backpack</li>
+            <li class="list-group-item">Weight: 680g</li>
+            <li class="list-group-item">Material: Ultra 200</li>
+            <li class="list-group-item">Price: $375</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Gossamer Gear 36 Hyperlight</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Gossamer Gear 36 Hyperlight</div>
         <img src="https://www.gossamergear.com/cdn/shop/products/Murmur36RF_1296x.jpg?v=1667330022" class="card-img-top" alt="Gossamer Gear 36 Hyperlight">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 425g</li>
-          <li class="list-group-item">Material: Robic Nylon</li>
-          <li class="list-group-item">Price: $180</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Backpack</li>
+            <li class="list-group-item">Weight: 425g</li>
+            <li class="list-group-item">Material: Robic Nylon</li>
+            <li class="list-group-item">Price: $180</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-blacke">Gossamer Gear Mariposa 60</div>
+        <div class="card-header bg-darkgray text-blacke fw-bold">Gossamer Gear Mariposa 60</div>
         <img src="https://www.gossamergear.com/cdn/shop/files/Mariposa_60_Tropical_Mist_RF_57d9bb5d-1ee4-4514-8a4a-f9e90521df8e_1296x.jpg?v=1711383502" class="card-img-top-mari" alt="Gossamer Gear Mariposa 60">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 907g</li>
-          <li class="list-group-item">Material: Robic Nylon</li>
-          <li class="list-group-item">Price: $285</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Backpack</li>
+            <li class="list-group-item">Weight: 907g</li>
+            <li class="list-group-item">Material: Robic Nylon</li>
+            <li class="list-group-item">Price: $285</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Cayl Mari Roll Top</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Cayl Mari Roll Top</div>
         <img src="https://cayl.co.kr/web/product/big/202401/5fda05332eff03f24e89d8922d2f1500.jpg" class="card-img-top" alt="Cayl Mari Roll Top">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 750g</li>
-          <li class="list-group-item">Material: Nylon 210D</li>
-          <li class="list-group-item">Price: ₩220,000</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Backpack</li>
+            <li class="list-group-item">Weight: 750g</li>
+            <li class="list-group-item">Material: X - pac</li>
+            <li class="list-group-item">Price: $150</li>
         </ul>
       </div>
     </div>
@@ -171,73 +181,49 @@
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Rab Latok Mountain Jacket</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Rab Latok Mountain</div>
         <img src="https://i1.adis.ws/i/jpl/ti_125705_a?w=800&h=800&qlt=80" class="card-img-top" alt="Rab Latok Mountain Jacket">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 600g</li>
-          <li class="list-group-item">Material: GORE-TEX Pro</li>
-          <li class="list-group-item">Price: $500</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Tent</li>
+            <li class="list-group-item">Weight: 600g</li>
+            <li class="list-group-item">Material: Pertex Shield Air</li>
+            <li class="list-group-item">Price: $1000</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Big Agnes Copper Spur HV UL3</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Big Agnes Fly Creek HV UL2</div>
         <img src="https://www.bigagnes.com/cdn/shop/products/Fly-Creek-HV-2-carbon-02_600x.png?v=1662576414" class="card-img-top" alt="Big Agnes Copper Spur HV UL3">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 1.59kg</li>
-          <li class="list-group-item">Material: Nylon Ripstop</li>
-          <li class="list-group-item">Price: $600</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Tent</li>
+            <li class="list-group-item">Weight: 1.04kg</li>
+            <li class="list-group-item">Material: Nylon Ripstop</li>
+            <li class="list-group-item">Price: $600</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Big Agnes Fly Creek HV UL2</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Big Agnes Copper Spur HV UL3</div>
         <img src="https://www.bigagnes.com/cdn/shop/products/Copper-Spur-HV-UL1-olive-02_600x.png?v=1662573351" class="card-img-top" alt="Big Agnes Fly Creek HV UL2">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 1.04kg</li>
-          <li class="list-group-item">Material: Nylon Ripstop</li>
-          <li class="list-group-item">Price: $450</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Tent</li>
+            <li class="list-group-item">Weight: 1.59kg</li>
+            <li class="list-group-item">Material: Nylon Ripstop</li>
+            <li class="list-group-item">Price: $380</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Big Agnes Tiger Wall UL1</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Big Agnes Tiger Wall UL1</div>
         <img src="https://www.bigagnes.com/cdn/shop/products/Tiger-Wall-UL1-Solution-Dye-02_600x.png?v=1662493148" class="card-img-top" alt="Big Agnes Tiger Wall UL1">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 964g</li>
-          <li class="list-group-item">Material: Nylon Ripstop</li>
-          <li class="list-group-item">Price: $380</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Tent</li>
+            <li class="list-group-item">Weight: 964g</li>
+            <li class="list-group-item">Material: Nylon Ripstop</li>
+            <li class="list-group-item">Price: $450</li>
         </ul>
       </div>
     </div>
@@ -245,81 +231,57 @@
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Therm-a-Rest XLite NXT MAX</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Therm-a-Rest XLite NXT</div>
         <img src="https://www.thermarest.com/dw/image/v2/BDJM_PRD/on/demandware.static/-/Sites-thermarest-master-catalog/default/dwdf8d948c/images/large/11627_thermarest_neoair_xlite_nxt_solarflare_regular_angle.jpg?sw=700&sh=525&sm=fit" class="card-img-top-lr" alt="Therm-a-Rest NeoAir XLite NXT MAX">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 490g</li>
-          <li class="list-group-item">Material: Nylon</li>
-          <li class="list-group-item">Price: $200</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Sleeping Pad</li>
+            <li class="list-group-item">Weight: 380g</li>
+            <li class="list-group-item">Material: Nylon</li>
+            <li class="list-group-item">Price: $200</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Therm-a-Rest XTherm NXT MAX</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Therm-a-Rest XTherm NXT MAX</div>
         <img src="https://www.thermarest.com/dw/image/v2/BDJM_PRD/on/demandware.static/-/Sites-thermarest-master-catalog/default/dw314cf0e2/images/large/11636_thermarest_neoair_xtherm_nxt_max_neptune_regular_wide_angle.jpg?sw=700&sh=525&sm=fit" class="card-img-top-lr" alt="Therm-a-Rest NeoAir XTherm NXT MAX">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 570g</li>
-          <li class="list-group-item">Material: Nylon</li>
-          <li class="list-group-item">Price: $240</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Sleeping Pad</li>
+            <li class="list-group-item">Weight: 570g</li>
+            <li class="list-group-item">Material: Nylon</li>
+            <li class="list-group-item">Price: $260</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">MSR Reactor 1.5L Stove System</div>
+        <div class="card-header bg-darkgray text-black fw-bold">MSR Reactor 1.5L Stove System</div>
         <img src="http://www.msrgear.co.kr/wp-content/uploads/2020/04/1.7%EB%A6%AC%EC%95%A1%ED%84%B0-500x500.jpg" class="card-img-top" alt="MSR Reactor 1.5L Stove System">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 615g</li>
-          <li class="list-group-item">Material: Aluminum</li>
-          <li class="list-group-item">Price: $220</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Stove</li>
+            <li class="list-group-item">Weight: 495g</li>
+            <li class="list-group-item">Material: Titanium</li>
+            <li class="list-group-item">Price: $250</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
       <div class="card h-100 shadow-sm">
-        <div class="card-header bg-darkgray text-black">Nitecore NU25 UL Headlamp</div>
+        <div class="card-header bg-darkgray text-black fw-bold">Nitecore NU25 UL</div>
         <img src="https://ultralighthiker.com.au/cdn/shop/products/nitecore-nu25-ul..png?v=1671700994&width=800" class="card-img-top" alt="Nitecore NU25 UL Headlamp">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Weight: 45g</li>
-          <li class="list-group-item">Material: Plastic</li>
-          <li class="list-group-item">Price: $40</li>
-          <li class="list-group-item">Rating:
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-          </li>
+            <li class="list-group-item">Category: Lantern</li>
+            <li class="list-group-item">Weight: 45g</li>
+            <li class="list-group-item">Material: Plastic</li>
+            <li class="list-group-item">Price: $40</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<footer class="mt-5 bg-dark text-white text-center">
-  <p>My Backpacking Gears &copy; 2024</p>
+<footer class="foot text-white text-center d-flex align-items-center justify-content-center">
+    <p>My Backpacking Gears &copy; 2024</p>
 </footer>
 
 </body>
