@@ -101,3 +101,14 @@ body{
     margin-top: 30px;
     width: 110px;
 }
+.is-valid {
+  border-color: 1px solid green;
+  outline: 1.7px solid green;
+}
+.is-invalid {
+  border-color: 1px solid red;
+  outline: 1.7px solid red;
+}
+.is-invalid::placeholder {
+  color: red;
+}
