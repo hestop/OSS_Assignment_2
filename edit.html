@@ -21,11 +21,10 @@
                 allValid = false;
             }
         });
-
         if (!allValid) {
             alert('Please fill your gear information');
         } else {
-            alert('Gear added ;)');
+            alert('Changes saved ;)');
             window.location.href = "view.html";
         }
     }
@@ -35,23 +34,29 @@
       
         fields.forEach(function(fieldId) {
           const field = document.getElementById(fieldId);
-      
-          field.addEventListener('input', function() {
+
             if (field.value.trim() !== '') {
-              field.classList.remove('is-invalid');
-              field.classList.add('is-valid');
-            } else {
-              field.classList.remove('is-valid');
-              field.classList.remove('is-invalid');
-            }
-          });
+                    field.classList.add('is-valid');
+                } else {
+                    field.classList.add('is-invalid');
+                }
       
-          field.addEventListener('blur', function() {
-            if (field.value.trim() === '') {
-              field.classList.remove('is-valid');
-              field.classList.add('is-invalid');
-            }
-          });
+            field.addEventListener('input', function() {
+                if (field.value.trim() !== '') {
+                field.classList.remove('is-invalid');
+                field.classList.add('is-valid');
+                } else {
+                field.classList.remove('is-valid');
+                field.classList.remove('is-invalid');
+                }
+            });
+      
+            field.addEventListener('blur', function() {
+                if (field.value.trim() === '') {
+                field.classList.remove('is-valid');
+                field.classList.add('is-invalid');
+                }
+            });
         });
     });
 </script>
