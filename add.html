@@ -12,9 +12,23 @@
 
 <script>
     function confirmAdd() {
-          alert('Gear added ;)');
-          window.location.href = "view.html";
+        const fields = ['itemName', 'category', 'weight', 'material', 'price'];
+        let allValid = true;
+
+        fields.forEach(function(fieldId) {
+            const field = document.getElementById(fieldId);
+            if (!field.classList.contains('is-valid')) {
+                allValid = false;
+            }
+        });
+
+        if (!allValid) {
+            alert('Please fill your gear information');
+        } else {
+            alert('Gear added ;)');
+            window.location.href = "view.html";
         }
+    }
 
     document.addEventListener('DOMContentLoaded', function() {
         const fields = ['itemName', 'category', 'weight', 'material', 'price'];
