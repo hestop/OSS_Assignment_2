@@ -1,0 +1,124 @@
+{
+    "gears": [
+      {
+        "id": 1,
+        "name": "Zpacks Arc Haul Ultra 50L",
+        "category": "Backpack",
+        "weight": 680,
+        "material": "Ultra 200",
+        "price": 375,
+        "feature": "Air stay back panel",
+        "image": "https://zpacks.com/cdn/shop/files/zpacks-archaul-50l-grey_2048x.jpg?v=1694539516"
+      },
+      {
+        "id": 2,
+        "name": "Gossamer Gear 36 Hyperlight",
+        "category": "Backpack",
+        "weight": 425,
+        "material": "Robic Nylon",
+        "price": 180,
+        "feature": "Mesh shoulder straps",
+        "image": "https://www.gossamergear.com/cdn/shop/products/Murmur36RF_1296x.jpg?v=1667330022"
+      },
+      {
+        "id": 3,
+        "name": "Gossamer Gear Mariposa 60",
+        "category": "Backpack",
+        "weight": 907,
+        "material": "Robic Nylon",
+        "price": 285,
+        "feature": "U shape frame",
+        "image": "https://www.gossamergear.com/cdn/shop/files/Mariposa_60_Tropical_Mist_RF_57d9bb5d-1ee4-4514-8a4a-f9e90521df8e_1296x.jpg?v=1711383502"
+      },
+      {
+        "id": 4,
+        "name": "Cayl Mari Roll Top",
+        "category": "Backpack",
+        "weight": 750,
+        "material": "X - pac",
+        "price": 150,
+        "feature": "Full - opening zipper",
+        "image": "https://cayl.co.kr/web/product/big/202401/5fda05332eff03f24e89d8922d2f1500.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Rab Latok Mountain",
+        "category": "Tent",
+        "weight": 600,
+        "material": "Pertex Shield Air",
+        "price": 1000,
+        "feature": "Membrane fabric",
+        "image": "https://i1.adis.ws/i/jpl/ti_125705_a?w=800&h=800&qlt=80"
+      },
+      {
+        "id": 6,
+        "name": "Big Agnes Fly Creek HV UL2",
+        "category": "Tent",
+        "weight": 1040,
+        "material": "Nylon Ripstop",
+        "price": 600,
+        "feature": "Wind - resistant shapes",
+        "image": "https://www.bigagnes.com/cdn/shop/products/Fly-Creek-HV-2-carbon-02_600x.png?v=1662576414"
+      },
+      {
+        "id": 7,
+        "name": "Big Agnes Copper Spur HV UL3",
+        "category": "Tent",
+        "weight": 1590,
+        "material": "Nylon Ripstop",
+        "price": 380,
+        "feature": "Spacious interior",
+        "image": "https://www.bigagnes.com/cdn/shop/products/Copper-Spur-HV-UL1-olive-02_600x.png?v=1662573351"
+      },
+      {
+        "id": 8,
+        "name": "Big Agnes Tiger Wall UL1",
+        "category": "Tent",
+        "weight": 964,
+        "material": "Nylon Ripstop",
+        "price": 450,
+        "feature": "Air stay back panel",
+        "image": "https://www.bigagnes.com/cdn/shop/products/Tiger-Wall-UL1-Solution-Dye-02_600x.png?v=1662493148"
+      },
+      {
+        "id": 9,
+        "name": "Therm-a-Rest XLite NXT",
+        "category": "Sleeping Pad",
+        "weight": 380,
+        "material": "Nylon",
+        "price": 200,
+        "feature": "R - value 4.5",
+        "image": "https://www.thermarest.com/dw/image/v2/BDJM_PRD/on/demandware.static/-/Sites-thermarest-master-catalog/default/dwdf8d948c/images/large/11627_thermarest_neoair_xlite_nxt_solarflare_regular_angle.jpg?sw=700&sh=525&sm=fit"
+      },
+      {
+        "id": 10,
+        "name": "Therm-a-Rest XTherm NXT MAX",
+        "category": "Sleeping Pad",
+        "weight": 570,
+        "material": "Nylon",
+        "price": 260,
+        "feature": "R - value 7.3",
+        "image": "https://www.thermarest.com/dw/image/v2/BDJM_PRD/on/demandware.static/-/Sites-thermarest-master-catalog/default/dw314cf0e2/images/large/11636_thermarest_neoair_xtherm_nxt_max_neptune_regular_wide_angle.jpg?sw=700&sh=525&sm=fit"
+      },
+      {
+        "id": 11,
+        "name": "MSR Reactor 1.5L Stove System",
+        "category": "Stove",
+        "weight": 495,
+        "material": "Titanium",
+        "price": 250,
+        "feature": "Strong wind resistance",
+        "image": "http://www.msrgear.co.kr/wp-content/uploads/2020/04/1.7%EB%A6%AC%EC%95%A1%ED%84%B0-500x500.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Nitecore NU25 UL",
+        "category": "Lantern",
+        "weight": 45,
+        "material": "Plastic",
+        "price": 40,
+        "feature": "Ultra light",
+        "image": "https://ultralighthiker.com.au/cdn/shop/products/nitecore-nu25-ul..png?v=1671700994&width=800"
+      }
+    ]
+  }
